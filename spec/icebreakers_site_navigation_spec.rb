@@ -73,6 +73,16 @@ RSpec.describe 'Icebreakers Site Navigation' do
 
               expect(html_file_contents).to include('</li>')
             end
+
+            context 'within the <li> tags' do
+              it 'each contains an <a> tag to link to another page' do
+                as = parsed_html.search('html > body > header > nav > ul > li > a')
+
+                expect(as.length).to eq(2)
+
+                expect(html_file_contents).to include('</a>')
+              end
+            end
           end
         end
       end
@@ -84,6 +94,16 @@ RSpec.describe 'Icebreakers Site Navigation' do
           expect(h3.name).to eq('h3')
 
           expect(html_file_contents).to include('</h3>')
+        end
+
+        context 'within <h3>' do
+          it "contains an <a> tag to link back to the site's homepage" do
+            a = parsed_html.search('html > body > header > h3 > a').first
+
+            expect(a.name).to eq('a')
+
+            expect(html_file_contents).to include('</a>')
+          end
         end
       end
     end
