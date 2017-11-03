@@ -2,12 +2,19 @@
 
 ## Objectives
 
-1. Code an `h1` tag in `index.html`
-2. Make the inner text of the `h1` Hello, World!
+1. Turn plain text into a link by wrapping it in `<a>` tags.
+2. Create a fully-functional navigation header that links to the site's main pages.
 
 ## Instructions
 
-Open `index.html` in your text editor. Add an `h1` tag with the inner text of `Hello, World!` anywhere in the file. You can run the tests with this lab via `learn`. Read the error messages in your tests, they contain hints!
+Open `index.html` in your text editor. You'll see the code that we wrote in a previous lab. In this lab, you're tasked with extending the plain text navigation header by adding hyperlinks to other pages.
+
+To pass the tests for this lab, you need to wrap three different pieces of text in `<a>` tags, turning them into links:
+  - `New Questions`
+  - `About`
+  - The `Icebreakers` inside the `h3` element
+
+You can run the tests with this lab via `learn`. Make sure you save the file before running the test suite. Failing tests will provide helpful error messages that you can use to debug your code — read them closely for hints!
 
 ## Viewing your work in the browser
 
@@ -19,4 +26,4 @@ Once you have the HTML document open in your browser, you can make changes to it
 
 ## Resources
 
-* [h1-h6 Tags](https://www.w3schools.com/tags/tag_hn.asp)
+* [W3S — HTML `<a>` Tag](https://www.w3schools.com/tags/tag_a.asp)
