@@ -16,6 +16,36 @@ To pass the tests for this lab, you need to wrap three different pieces of text 
 
 You can run the tests with this lab via `learn`. Make sure you save the file before running the test suite. Failing tests will provide helpful error messages that you can use to debug your code — read them closely for hints!
 
+This is the entire description of the navigation structure:
+
+```
+Icebreakers Site Navigation
+  begins with a valid doctype
+  has a top-level <html> tag to enclose the document
+  within <html>
+    contains a <head> tag to enclose the header
+    within <head>
+      contains a <title> tag to enclose the site title
+  within <html>
+    contains a <body> tag to enclose the body of the document
+    within <body>
+      contains a <header> tag to enclose the site header
+      within <header>
+        contains a <nav> tag to enclose the site navigation 
+        within <nav>
+          contains a <ul> tag to enclose the site navigation 
+          within <ul>
+            contains a pair of <li> tags for linking to other pages 
+            within the <li> tags
+              each contains an <a> tag to link to another page 
+      within <header>
+        contains an <h3> tag to enclose the site's title 
+        within <h3>
+          contains an <a> tag to link back to the site's homepage 
+  w3c validation
+    is a valid w3c document
+```
+
 ## Viewing your work in the browser
 
 While working through these assignments, your general workflow should center on writing code in the text editor and periodically running the test suite in the terminal to check your work.
